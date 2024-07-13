@@ -6,15 +6,16 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --hue: 230;
-  --first-color: hsl(var(--hue), 55%, 55%);
-  --first-color-light: hsl(var(--hue), 55%, 65%);
-  --first-color-alt: hsl(var(--hue), 50%, 50%);
-  --title-color: hsl(var(--hue), 30%, 95%);
-  --text-color: hsl(var(--hue), 20%, 80%);
-  --text-color-light: hsl(var(--hue), 20%, 70%);
-  --body-color: hsl(var(--hue), 40%, 16%);
-  --container-color: hsl(var(--hue), 40%, 20%);
+  --hue: 210;
+  --first-color: hsl(var(--hue), 10%, 60%);
+  --first-color-light: hsl(var(--hue), 10%, 70%);
+  --first-color-alt: hsl(var(--hue), 10%, 50%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(var(--hue), 5%, 85%);
+  --text-color-light: hsl(var(--hue), 5%, 75%);
+  --body-color: hsl(var(--hue), 15%, 12%);
+  --container-color: hsl(var(--hue), 15%, 16%);
+
 
   /*========== Font and typography ==========*/
   --body-font: "Syne", sans-serif;
@@ -83,6 +84,10 @@ textarea {
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+b, strong {
+  color: #e0f0ff; /* Slightly blue-tinted white */
+  text-shadow: 0 0 1px #ffffff;
 }
 
 p {
@@ -476,27 +481,6 @@ img {
 
 .skills__box:hover {
   transform: translateY(-.25rem);
-}
-
-/*=============== SERVICES ===============*/
-.services {
-  background-color: var(--container-color);
-}
-
-.services__container {
-  row-gap: 2rem;
-}
-
-.services__icon {
-  display: block;
-  color: var(--first-color-light);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.services__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: .75rem;
 }
 
 /*=============== CONTACT ===============*/
