@@ -113,14 +113,16 @@ sr.reveal(`.about__img`, {origin: 'left'})
 
 /*=============== FADE-OUT TRANSITION ===============*/
 document.addEventListener('DOMContentLoaded', function() {
-   const workLink = document.querySelector('.work__link');
+   const workLinks = document.querySelectorAll('.work__link');
    
-   workLink.addEventListener('click', function(event) {
-       event.preventDefault(); // Prevent the default link behavior
-       document.body.classList.add('fade-out'); // Add the fade-out class to the body
-       
-       setTimeout(() => {
-           window.location.href = workLink.href; // Redirect to the target page after the fade-out effect
-       }, 500); // Duration of the fade-out effect in milliseconds
+   workLinks.forEach(function(workLink) {
+       workLink.addEventListener('click', function(event) {
+           event.preventDefault(); // Prevent the default link behavior
+           document.body.classList.add('fade-out'); // Add the fade-out class to the body
+           
+           setTimeout(() => {
+               window.location.href = workLink.href; // Redirect to the target page after the fade-out effect
+           }, 500); // Duration of the fade-out effect in milliseconds
+       });
    });
 });
