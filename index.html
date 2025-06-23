@@ -13,7 +13,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Niharik Kalpam - Professional Java Developer</title>
+      <title>Niharik Kalpam - AI/ML Analyst</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -28,12 +28,13 @@
                   </li>
    
                   <li>
+                     <a href="#info" class="nav__link">My Info</a>
+                  </li>
+
+                  <li>
                      <a href="#work" class="nav__link">Work</a>
                   </li>
    
-                  <li>
-                     <a href="#info" class="nav__link">My Info</a>
-                  </li>
                   
                   <li>
                      <a href="#certifications" class="nav__link">Certifications</a>
@@ -63,11 +64,14 @@
          <section class="home section" id="home">
             <div class="home__container container grid">
                <!-- Profile image (rectangular ratio 220 x 350, 550 x 860...) -->
-               <img src="assets\img\pic_h_nb.png" alt="image" class="home__img">
+               <img src="assets/img/pic_h_nb.png" alt="image" class="home__img">
 
                <div class="home__data">
                   <h1 class="home__name">Niharik<br>Kalpam</h1>
-                  <h3 class="home__profession">Java Developer</h3>
+                  <h3 class="home__profession">
+                     <span id="role"></span> <br>
+                     <span class="constant">Java & Integration Expert</span>
+                   </h3>
                </div>
 
                <a href="#work" class="home__scroll">
@@ -80,11 +84,365 @@
             </div>
          </section>
 
+         <!--==================== INFO ====================-->
+         <section class="info section" id="info">
+            <h2 class="section__title">MY INFO</h2>
+
+            <div class="info__container container grid">
+               <!-- ABOUT -->
+               <div class="about grid">
+                  <div class="about__content">
+                     <h3 class="info__title">About Me</h3>
+                     <p class="about__description"> Transitioning into the field of <b>Machine Learning</b>, 
+                        I bring over <b>4 years</b> of technical experience in <b>Guidewire Integration</b> 
+                        and <b>Java Development</b>. Currently pursuing a Master’s in <b>Business Analysis</b> & 
+                        <b>Information Systems</b>, I am dedicated to expanding my expertise in <b>machine learning</b> 
+                        algorithms, <b>statistical modeling</b>, and <b>AI-driven solutions</b>. 
+                        <br><br> My background includes designing scalable applications using <b>Java</b>, 
+                        <b>Spring Boot</b>, and <b>SQL</b>, along with hands-on experience in <b>data transformation</b> and 
+                        <b>ETL</b> processes. These skills form a solid foundation as I develop competencies in 
+                        <b>data preprocessing</b>, <b>supervised and unsupervised learning</b>, and <b>model deployment</b>. 
+                        <br><br> Passionate about solving real-world problems with machine learning, I aim to bridge my technical 
+                        acumen with advanced data-driven techniques to deliver actionable insights and impactful solutions. 
+                        Open to collaborations and opportunities to contribute to innovative ML projects that drive 
+                        decision-making and efficiency. </p>
+                     <!--  Resume -->
+                                            <!--  TODO -->
+                     <a href="#contact"  class="button about__button">Contact Me</a>
+                     <!-- <a href="assets/pdf/NiharikKalpam_Resume.pdf" download="" target="_blank" class="button about__button">Download Resume</a> -->
+                     <!-- <a class="button about__button">Download Resume</a> -->
+                  </div>
+
+                  <!-- Profile image (rectangular ratio 250 x 350, 450 x 620...) -->
+                  <img src="assets\img\pic_a_nb.webp" alt="image" class="about__img">
+               </div>
+
+               <!-- EXPERIENCE -->
+               <div class="experience">
+                  <br>
+                  <h3 class="info__title">Experience</h3>
+
+                  <div class="experience__content grid">
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Wipro</h2>
+
+                        <div>
+                           <h3 class="experience__profession">Technical Lead - Integration</h3>
+                           <span class="experience__date">10/2022 - 08/2023</span>
+                           <p class="experience__description">
+                              Streamlined data pipelines and optimized integrations using Kafka and Redis, 
+                              enhancing data flow and system performance. Designed CI/CD pipelines and implemented 
+                              workflows to reduce deployment time by 12%. Conducted data analysis to identify 
+                              bottlenecks and improve operational efficiency. Led cross-functional teams, 
+                              driving technical solutions and aligning processes with business objectives, 
+                              aiding data-driven decision-making.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Technumen</h2>
+
+                        <div>
+                           <h3 class="experience__profession">Technical Consultant - Integration</h3>
+                           <span class="experience__date">10/2021 - 10/2022</span>
+                           <p class="experience__description">
+                              Utilized Splunk and ELK stack to aggregate and analyze large-scale log data, 
+                              identifying patterns and reducing system downtime by 20% through targeted 
+                              optimizations. Improved microservices performance with advanced testing and 
+                              tuning techniques, ensuring seamless data flow and reliability. Collaborated on 
+                              data modeling and workflow enhancements to align system processes with business 
+                              needs, delivering actionable operational insights.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="experience__data grid">
+                        <h2 class="experience__company">Capgemini</h2>
+
+                        <div>
+                           <h3 class="experience__profession">Associate Consultant</h3>
+                           <span class="experience__date">11/2020 - 10/2021</span>
+                           <p class="experience__description">
+                              Streamlined backend operations for the GW insurance platform using Java, 
+                              React, and Node.js, optimizing real-time data processing to reduce page 
+                              load times by 1.5 seconds and improve user session engagement by 12%. 
+                              Enhanced platform performance by implementing data flow automation, 
+                              contributing to measurable improvements in customer experience.
+                           </p> <br>
+                           <h3 class="experience__profession">Senior Software Engineer</h3>
+                           <span class="experience__date">08/2019 - 11/2020</span>
+                           <p class="experience__description">
+                              Led integration projects with third-party services (ERAC, Safelite, Copart), 
+                              designing robust APIs and ensuring seamless data exchange across platforms. 
+                              Streamlined workflows and enhanced system connectivity by delivering secure, 
+                              scalable solutions tailored to business-critical operations.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- SKILLS -->
+               <div class="skills">
+                  <h3 class="info__title">Skills</h3>
+
+                     <div class="skills__content grid">
+                        
+                        <div class="skills__box">
+                           <img src="assets/img/info-sas.jpeg" alt="SAS" class="skills__img">
+                           <span class="skills__name">SAS Products</span>
+                        </div>
+                        <div class="skills__box">
+                              <img src="assets/img/info-python-gif.gif" alt="Python" class="skills__img">
+                              <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__box">
+                           <img src="assets/img/info-sklearn.svg" alt="Scikit learn" class="skills__img">
+                           <span class="skills__name">Scikit-Learn</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                           <img src="assets/img/info-tensorflow.svg" alt="Scikit learn" class="skills__img">
+                           <span class="skills__name">TensorFlow</span>
+                        </div>
+                        <div class="skills__box">
+                           <img src="assets/img/info-pytorch.svg" alt="PyTorch" class="skills__img">
+                           <span class="skills__name">PyTorch</span>
+                        </div>
+                        <div class="skills__box">
+                              <img src="assets/img/info-tableau-gif.gif" alt="Tableau" class="skills__img">
+                              <span class="skills__name">Tableau</span>
+                        </div>
+                        <div class="skills__box">
+                           <img src="assets/img/info-pbi.png" alt="Power BI" class="skills__img">
+                           <span class="skills__name">Power BI</span>
+                        </div>
+                        <div class="skills__box">
+                              <img src="assets/img/info-mysql.svg" alt="MySQL" class="skills__img">
+                              <span class="skills__name">MySQL</span>
+                        </div>
+                        <div class="skills__box">
+                              <img src="assets/img/info-mongodb.svg" alt="MongoDB" class="skills__img">
+                              <span class="skills__name">MongoDB</span>
+                        </div>
+       
+                        <div class="skills__box">
+                           <img src="assets/img/info-excel.png" alt="excel" class="skills__img">
+                           <span class="skills__name">MS Excel</span>
+                        </div>        
+
+                               
+                        <div class="skills__box">
+                           <img src="assets/img/info-docker.png" alt="docker" class="skills__img">
+                           <span class="skills__name">Docker</span>
+                        </div>   
+
+                        <div class="skills__box">
+                           <img src="assets/img/info-aws.png" alt="AWS" class="skills__img">
+                           <span class="skills__name">AWS</span>
+                        </div>                                              
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-restfulapi.png" alt="Restful WS" class="skills__img">
+                              <span class="skills__name">Restful WS</span>
+                        </div>
+
+                        <div class="skills__box">
+                           <img src="assets/img/info-soap-ui.svg" alt="Soap WS" class="skills__img">
+                           <span class="skills__name">Soap WS</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-react-gif.gif" alt="React" class="skills__img">
+                              <span class="skills__name">React</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-html.svg" alt="HTML" class="skills__img">
+                              <span class="skills__name">HTML</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-css.svg" alt="CSS" class="skills__img">
+                              <span class="skills__name">CSS</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-javascript-gif.gif" alt="JavaScript" class="skills__img">
+                              <span class="skills__name">JavaScript</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-java-gif.gif" alt="Java" class="skills__img">
+                              <span class="skills__name">Java</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-spring.svg" alt="Spring" class="skills__img">
+                              <span class="skills__name">Spring</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-springboot.svg" alt="SpringBoot" class="skills__img">
+                              <span class="skills__name">SpringBoot</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-kafka.svg" alt="Apache Kafka" class="skills__img">
+                              <span class="skills__name">Apache Kafka</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-jms.svg" alt="JMS" class="skills__img">
+                              <span class="skills__name">JMS</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-hibernate.svg" alt="Hibernate" class="skills__img">
+                              <span class="skills__name">Hibernate</span>
+                        </div>
+
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-prometheus.svg" alt="Prometheus" class="skills__img">
+                              <span class="skills__name">Prometheus</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-grafana.svg" alt="Grafana" class="skills__img">
+                              <span class="skills__name">Grafana</span>
+                        </div>
+                        <div class="skills__box">
+                              <img src="assets/img/info-git.svg" alt="Git" class="skills__img">
+                              <span class="skills__name">Git</span>
+                        </div>
+                        
+                        <div class="skills__box">
+                              <img src="assets/img/info-github.svg" alt="GitHub" class="skills__img">
+                              <span class="skills__name">GitHub</span>
+                        </div>
+                        
+                     </div>
+               </div>
+            </div>
+         </section>
+
+         
+
          <!--==================== WORKS ====================-->
-          <section class="work section" id="work">
-            <h2 class="section__title">RECENT WORKS</h2>
+         <section class="work section" id="work">
             
-            <div class="work__container container grid">
+            <h2 class="section__title">RECENT WORKS</h2>
+
+                     <!--==================== Machine Learning & Neural Networks Projects ====================-->
+                     <div class="work__container container grid" id="ml_projects">
+                          
+                        <a href="#ml_projects" class="home__scroll">
+                           <div class="home__scroll-box">
+                              <i class="ri-arrow-down-line"></i>
+                           </div>
+                           <span class="home__scroll-text">Machine Learning, Neural Networks & Analysis</span>
+                        </a>
+
+                        <article class="work__card">
+                           <a href="https://techmasteryencyclopedia.com/"  class="work__link">
+                              <h2 class="work__title">Tech Mastery Encyclopedia</h2>
+                              <p class="work__description">
+                                 Uses NLP, BERT-based classification, and machine learning to analyze job market trends, showcasing in-demand skills and tools via an interactive dashboard. Powered by FastAPI, Netlify, and AWS EC2.
+                              </p>
+                              <img src="assets/img/work-tme.png" alt="TME" class="work__img">
+                              <i class="ri-arrow-right-line"></i>
+                           </a>
+                        </article>      
+
+                        <article class="work__card">
+                           <a href="https://github.com/niharik22/Multilabel-Image-Classification-ResNet"  class="work__link">
+                              <h2 class="work__title">Multi-Label Image Classification</h2>
+                              <p class="work__description">
+                                 Deep learning model leveraging ResNet for multi-label image classification, 
+                                 achieving high precision and recall while ensuring robust 
+                                 interpretability with detailed evaluation metrics and visualizations.
+                              </p>
+                              <img src="assets/img/work-mlc.jpg" alt="MLC" class="work__img">
+                              <i class="ri-arrow-right-line"></i>
+                           </a>
+                        </article> 
+
+                        <article class="work__card">
+                           <a href="https://github.com/niharik22/BaltimoreCrimePrediction"  class="work__link">
+                              <h2 class="work__title">Baltimore Crime Forecasting</h2>
+                              <p class="work__description">
+                                 Leveraged machine learning to analyze 100,000+ crime records, 
+                                 enhancing predictive accuracy and informing law enforcement strategies 
+                                 through advanced analytics and visualizations
+                              </p>
+                              <img src="assets/img/work-bcp-scl.jpeg" alt="BCP" class="work__img">
+                              <i class="ri-arrow-right-line"></i>
+                           </a>
+                        </article>      
+     
+
+                        <article class="work__card">
+                           <a href="https://github.com/niharik22/LinkedinSrapper"  class="work__link">
+                              <h2 class="work__title">Linkedin Web Scraper</h2>
+                              <p class="work__description">
+                                 Automated LinkedIn job scraper using Python and Selenium, containerized with Docker, 
+                                 to extract and analyze job listings for educational purposes.
+                              </p>
+         
+                              <img src="assets/img/work-lws-scl.jpeg" alt="Linkedin-Scraper" class="work__img">
+                              <i class="ri-arrow-right-line"></i>
+                           </a>
+                        </article>
+      
+                  </div>
+
+               <!--==================== SQL & Database Solution Projects ====================-->
+               <div class="work__container container grid" id="db_projects">
+                     
+                  <a href="#db_projects" class="home__scroll">
+                     <div class="home__scroll-box">
+                        <i class="ri-arrow-down-line"></i>
+                     </div>
+                     <span class="home__scroll-text">SQL & Database Solutions</span>
+                  </a>
+
+               <article class="work__card">
+                  <a href="https://github.com/niharik22/LibraryManagementSystem"  class="work__link">
+                     <h2 class="work__title">Library Management System</h2>
+                     <p class="work__description">
+                        A MySQL-based Library Management System that automates checkouts and returns, simplifying book and patron management with functions, triggers, and stored procedures.
+                     </p>
+
+                     <img src="assets/img/work-lms-scl.jpeg" alt="lms" class="work__img">
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/niharik22/Census-Demographic-Analysis"  class="work__link">
+                     <h2 class="work__title">Census Demographic Analysis</h2>
+                     <p class="work__description">
+                        A SQL-based Census Project that analyzes population, growth, and literacy rates across states and districts, using advanced queries to uncover demographic trends.
+                     </p>
+                     <img src="assets/img/work-census-scl.jpeg" alt="NBS Computer" class="work__img">
+                     <i class="ri-arrow-right-line"></i>
+                  </a>
+               </article>
+
+            </div>
+
+            <!--==================== Java Projects ====================-->
+            <div class="work__container container grid" id="java_development">
+               
+               <a href="#java_development" class="home__scroll">
+                  <div class="home__scroll-box">
+                     <i class="ri-arrow-down-line"></i>
+                  </div>
+                  <span class="home__scroll-text">Java Development</span>
+               </a>
+
                <article class="work__card">
                   <a href="https://github.com/niharik22/QuoteGenerationService_Java"  class="work__link">
                      <h2 class="work__title">Quote Generation System</h2>
@@ -112,246 +470,78 @@
                </article>
 
             </div>
+      
          </section>
 
-         <!--==================== INFO ====================-->
-         <section class="info section" id="info">
-            <h2 class="section__title">MY INFO</h2>
+         <!--==================== Certifications ====================-->
+         <section class="skills section" id="certifications">
+            <h2 class="section__title">Certifications</h2>
 
-            <div class="info__container container grid">
-               <!-- ABOUT -->
-               <div class="about grid">
-                  <div class="about__content">
-                     <h3 class="info__title">About Me</h3>
-                     <p class="about__description">
-                        I am an experienced <b>Java Developer</b> with over <b>4 years</b> in the industry,
-                        specializing in <b>Spring</b> and <b>Spring Boot</b>. 
-                        I am dedicated to building high-performance applications and 
-                        optimizing system efficiency. My strong technical skills and 
-                        <b>passion for software development</b> drive me to create <b>innovative solutions</b> that meet business needs. 
-                        Let's collaborate to bring exceptional projects to life.
-                     </p>
-                     <!--  Resume -->
-                     <a href="assets/pdf/NiharikKalpam_Resume.pdf" download="" target="_blank" class="button about__button">Download Resume</a>
-                  </div>
+            <div class="skills__container container grid">
 
-                  <!-- Profile image (rectangular ratio 250 x 350, 450 x 620...) -->
-                  <img src="assets\img\pic_a_nb.png" alt="image" class="about__img">
-               </div>
+               
+               <article class="skills__card">
+                  <a href="https://www.credly.com/badges/88fd9304-4a24-4e70-8df8-ac1ad55ff824" target="_blank" class="work__link">
+                  <img src="assets/img/cert-sas.png" alt="SAS" class="skills__img">
+                  <h3 class="skills__title">SAS Certified Predictive Modeler</h3>
+                  <p class="skills__description">
+                     Certified for expertise in building predictive models, clustering, and segmentation techniques, validating my proficiency in SAS Enterprise Miner and advanced analytics to solve real-world business challenges.
+                  </p>
+                  </a>
+               </article>
 
-               <!-- EXPERIENCE -->
-               <div class="experience">
-                  <br>
-                  <h3 class="info__title">Experience</h3>
+               <article class="skills__card">
+                  <a href="https://www.credly.com/badges/f8574200-04c8-443b-a787-785757a78933" target="_blank" class="work__link">
+                  <img src="assets/img/cert-oracle.svg" alt="Oracle" class="skills__img">
+                  <h3 class="skills__title">Oracle Certified Associate, Java SE 8 Programmer</h3>
+                  <p class="skills__description">
+                     Certified for outstanding proficiency in Java programming, validating my in-depth knowledge of Java SE 8, object-oriented programming, core Java APIs, and best practices.
+                  </p>
+                  </a>
+               </article>
 
-                  <div class="experience__content grid">
-                     <div class="experience__data grid">
-                        <h2 class="experience__company">Wipro</h2>
+               <article class="skills__card">
+                  <a href="https://www.credly.com/badges/ee3cdafc-230c-4207-86b5-6af101d606f3" target="_blank" class="work__link">
+                  <img src="assets/img/cert-aws.svg" alt="AWSs" class="skills__img">
+                  <h3 class="skills__title">AWS Certified Developer – Associate</h3>
+                  <p class="skills__description">
+                     Validates my ability to develop, deploy, and debug applications on the Amazon Web Services (AWS) platform. It demonstrates my expertise in utilizing AWS services for secure, scalable, and efficient application development.
+                  </p>
+                  </a>
+               </article>
 
-                        <div>
-                           <h3 class="experience__profession">Technical Lead - Integration</h3>
-                           <span class="experience__date">10/2022 - 08/2023</span>
-                           <p class="experience__description">
-                              Successfully upgraded the GW insurance platform, improved system interoperability, 
-                              architected a CI/CD pipeline, integrated messaging plugins, led code reviews, 
-                              managed a team, and recruited and trained new hires.
-                           </p>
-                        </div>
-                     </div>
 
-                     <div class="experience__data grid">
-                        <h2 class="experience__company">Technumen</h2>
+               <article class="skills__card">
+                  <a href="https://www.hackerrank.com/certificates/761ee049ac68" target="_blank" class="work__link">
+                  <img src="assets/img/cert-hr.svg" alt="HackerRank" class="skills__img">
+                  <h3 class="skills__title">Hacker Rank Advanced SQL Certified</h3>
+                  <p class="skills__description">
+                     Demonstrates my proficiency in complex SQL queries, database design, and optimization techniques for efficient data management and analysis.
+                  </p>
+                  </a>
+            </article>
 
-                        <div>
-                           <h3 class="experience__profession">Technical Consultant - Integration</h3>
-                           <span class="experience__date">10/2021 - 10/2022</span>
-                           <p class="experience__description">
-                              Implemented advanced log analytics with Splunk and ELK stack, 
-                              optimized microservices performance, developed training modules, 
-                              and led business analysis and process re-engineering to enhance 
-                              solution alignment with business objectives.
-                           </p>
-                        </div>
-                     </div>
+               <article class="skills__card">
+                  <a href="https://github.com/niharik22/My_Certifications/blob/main/Associate_Certification_InsuranceSuite_10.0%20_Developer.pdf" target="_blank" class="work__link">
+                  <img src="assets/img/cert-gw.png" alt="Guidewire Associate" class="skills__img">
+                  <h3 class="skills__title">Guidewire Associate – Insurance Suite 10.0</h3>
+                  <p class="skills__description">
+                     Covers industry best practices, including coding standards, Git best practices, and code optimization techniques, ensuring proficiency in implementing and maintaining efficient, high-quality insurance software solutions.
+                  </p>
+                  </a>
+               </article>
 
-                     <div class="experience__data grid">
-                        <h2 class="experience__company">Capgemini</h2>
-
-                        <div>
-                           <h3 class="experience__profession">Associate Consultant</h3>
-                           <span class="experience__date">11/2020 - 10/2021</span>
-                           <p class="experience__description">
-                              Spearheaded the development of the GW insurance platform, utilizing Java for backend API, 
-                              React for frontend UI, and Node.js for real-time data processing, which reduced page load 
-                              times by 1.5 seconds and increased user sessions by 12%.
-                           </p> <br>
-                           <h3 class="experience__profession">Senior Software Engineer</h3>
-                           <span class="experience__date">08/2019 - 11/2020</span>
-                           <p class="experience__description">
-                              Led integration projects with renowned third-party services like ERAC,
-                               Safelite, and Copart, streamlining processes and boosting system connectivity.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- SKILLS -->
-               <div class="skills">
-                  <h3 class="info__title">Skills</h3>
-                  <div class="skills__content grid">
-                     <div class="skills__box">
-                        <img src="assets/img/info-java-gif.gif" alt="Java" class="skills__img">
-                        <span class="skills__name">Java</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-spring.svg" alt="Spring" class="skills__img">
-                        <span class="skills__name">Spring</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-springboot.svg" alt="SpringBoot" class="skills__img">
-                        <span class="skills__name">SpringBoot</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-restfulapi.png" alt="Restful WS" class="skills__img">
-                        <span class="skills__name">Restful WS</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-kafka.svg" alt="Apache Kafka" class="skills__img">
-                        <span class="skills__name">Apache Kafka</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-jms.svg" alt="JMS" class="skills__img">
-                        <span class="skills__name">JMS</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-hibernate.svg" alt="Hibernate" class="skills__img">
-                        <span class="skills__name">Hibernate</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-python-gif.gif" alt="Python" class="skills__img">
-                        <span class="skills__name">Python</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-mysql.svg" alt="MySQL" class="skills__img">
-                        <span class="skills__name">MySQL</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-soap-ui.svg" alt="Soap WS" class="skills__img">
-                        <span class="skills__name">Soap WS</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-prometheus.svg" alt="Prometheus" class="skills__img">
-                        <span class="skills__name">Prometheus</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-grafana.svg" alt="Grafana" class="skills__img">
-                        <span class="skills__name">Grafana</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-react-gif.gif" alt="React" class="skills__img">
-                        <span class="skills__name">React</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-html.svg" alt="HTML" class="skills__img">
-                        <span class="skills__name">HTML</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-css.svg" alt="CSS" class="skills__img">
-                        <span class="skills__name">CSS</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-javascript-gif.gif" alt="JavaScript" class="skills__img">
-                        <span class="skills__name">JavaScript</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-git.svg" alt="Git" class="skills__img">
-                        <span class="skills__name">Git</span>
-                    </div>
-                    
-                    <div class="skills__box">
-                        <img src="assets/img/info-github.svg" alt="GitHub" class="skills__img">
-                        <span class="skills__name">GitHub</span>
-                    </div>
-                    
-                  </div>
-               </div>
+               <article class="skills__card">
+                  <a href="https://github.com/niharik22/My_Certifications/blob/main/Specialist_Certification_InsuranceSuite_10.0_Integration.pdf" target="_blank" class="work__link">
+                  <img src="assets/img/cert-gw.png" alt="Guidewire Specialist" class="skills__img">
+                  <h3 class="skills__title">Guidewire Specialist Certification - Insurance Suite 10.0 Integration</h3>
+                  <p class="skills__description">
+                     Demonstrates expertise in integrating Guidewire Insurance Suite with other systems, focusing on seamless data exchange, API development, and implementation of best practices for robust and efficient insurance software solutions.
+                  </p>
+                  </a>
+               </article>
             </div>
          </section>
-
-<!--==================== Certifications ====================-->
-<section class="skills section" id="certifications">
-   <h2 class="section__title">Certifications</h2>
-
-   <div class="skills__container container grid">
-       <article class="skills__card">
-         <a href="https://www.credly.com/badges/f8574200-04c8-443b-a787-785757a78933" target="_blank" class="work__link">
-           <img src="assets/img/cert-oracle.svg" alt="Oracle" class="skills__img">
-           <h3 class="skills__title">Oracle Certified Associate, Java SE 8 Programmer</h3>
-           <p class="skills__description">
-            Certified for outstanding proficiency in Java programming, validating my in-depth knowledge of Java SE 8, object-oriented programming, core Java APIs, and best practices, signifying a solid foundation in one of the most widely used programming languages.
-           </p>
-         </a>
-       </article>
-
-       <article class="skills__card">
-         <a href="https://www.credly.com/badges/ee3cdafc-230c-4207-86b5-6af101d606f3" target="_blank" class="work__link">
-           <img src="assets/img/cert-aws.svg" alt="AWSs" class="skills__img">
-           <h3 class="skills__title">AWS Certified Developer – Associate</h3>
-           <p class="skills__description">
-            Validates my ability to develop, deploy, and debug applications on the Amazon Web Services (AWS) platform. It demonstrates my expertise in utilizing AWS services for secure, scalable, and efficient application development.
-           </p>
-         </a>
-       </article>
-
-
-       <article class="skills__card">
-         <a href="https://www.hackerrank.com/certificates/761ee049ac68" target="_blank" class="work__link">
-         <img src="assets/img/cert-hr.svg" alt="HackerRank" class="skills__img">
-         <h3 class="skills__title">Hacker Rank Advanced SQL Certified</h3>
-         <p class="skills__description">
-            Demonstrates my proficiency in complex SQL queries, database design, and optimization techniques for efficient data management and analysis.
-         </p>
-         </a>
-     </article>
-
-       <article class="skills__card">
-         <a href="https://github.com/niharik22/My_Certifications/blob/main/Associate_Certification_InsuranceSuite_10.0%20_Developer.pdf" target="_blank" class="work__link">
-         <img src="assets/img/cert-gw.png" alt="Guidewire Associate" class="skills__img">
-           <h3 class="skills__title">Guidewire Associate – Insurance Suite 10.0</h3>
-           <p class="skills__description">
-            Covers industry best practices, including coding standards, Git best practices, and code optimization techniques, ensuring proficiency in implementing and maintaining efficient, high-quality insurance software solutions.
-           </p>
-           </a>
-       </article>
-
-       <article class="skills__card">
-         <a href="https://github.com/niharik22/My_Certifications/blob/main/Specialist_Certification_InsuranceSuite_10.0_Integration.pdf" target="_blank" class="work__link">
-         <img src="assets/img/cert-gw.png" alt="Guidewire Specialist" class="skills__img">
-           <h3 class="skills__title">Guidewire Specialist Certification - Insurance Suite 10.0 Integration</h3>
-           <p class="skills__description">
-            Demonstrates expertise in integrating Guidewire Insurance Suite with other systems, focusing on seamless data exchange, API development, and implementation of best practices for robust and efficient insurance software solutions.
-           </p>
-           </a>
-       </article>
-   </div>
-</section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
@@ -360,7 +550,7 @@
             <div class="contact__container container grid">
                <form action="" class="contact__form grid" id="contact-form">
                   <div class="contact__group grid">
-                     <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                     <input type="text" name="user_name" placeholder="Name" required class="contact__input">
                      <input type="email" name="user_email" placeholder="Email" required class="contact__input">
                   </div>
 
@@ -373,12 +563,18 @@
 
                <div class="contact__social grid">
 
+                  <!-- Adding Phone Number -->
+                  <a href="tel:+1 937-750-6629" class="contact__social-link">
+                     <i class="ri-phone-line"></i>
+                     <span>+1 937 750 6629</span>
+                  </a>
+
                   <a href="https://leetcode.com/u/niharik22/" target="_blank" class="contact__social-link">
                   <img src="assets/img/info-leetcode.png ">
                      <span>LeetCode</span>
                   </a>
 
-                  <a href="https://github.com/niharik22" target="_blank class="contact__social-link">
+                  <a href="https://github.com/niharik22" target="_blank" class="contact__social-link">
                      <i class="ri-github-fill"></i>
                      <span>GitHub</span>
                  </a>
@@ -387,10 +583,11 @@
                      <i class="ri-linkedin-box-line"></i>
                      <span>Linkedin</span>
                   </a>
-
+                  
                </div>
             </div>
          </section>
+
       </main>
 
       <!--==================== FOOTER ====================-->
@@ -411,7 +608,7 @@
             </ul>
 
             <span class="footer__copy">
-               &#169; All Rights Reserved By Niharik Kalpam.</a>
+               &#169; All Rights Reserved By Niharik Kalpam.
             </span>
          </div>
       </footer>

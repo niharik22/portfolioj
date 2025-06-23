@@ -126,3 +126,43 @@ document.addEventListener('DOMContentLoaded', function() {
        });
    });
 });
+
+
+/*=============== Role Changes ===============*/
+const roles = ["Data Scientist", "AI/ML Analyst", "Machine Learning Engineer"];
+let roleIndex = 0;
+let charIndex = 0;
+let typingSpeed = 100; // Adjust typing speed (in ms) per character
+let erasingSpeed = 100; // Adjust erasing speed (in ms) per character
+let delayBetweenRoles = 1500; // Delay before typing next role (in ms)
+
+const roleElement = document.getElementById("role");
+
+function typeRole() {
+  if (charIndex < roles[roleIndex].length) {
+    // Add next character and increment charIndex
+    roleElement.innerHTML += roles[roleIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeRole, typingSpeed);
+  } else {
+    // Once typing is complete, wait before erasing
+    setTimeout(eraseRole, delayBetweenRoles);
+  }
+}
+
+function eraseRole() {
+  if (charIndex > 0) {
+    // Remove last character and decrement charIndex
+    roleElement.innerHTML = roles[roleIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseRole, erasingSpeed);
+  } else {
+    // Move to the next role and start typing
+    roleIndex = (roleIndex + 1) % roles.length;
+    setTimeout(typeRole, typingSpeed);
+  }
+}
+
+// Start the typing effect
+document.addEventListener("DOMContentLoaded", () => setTimeout(typeRole, delayBetweenRoles));
+

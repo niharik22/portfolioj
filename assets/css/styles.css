@@ -267,22 +267,65 @@ img {
   margin-bottom: 1rem;
 }
 
+
 .home__profession {
   position: relative;
-  font-size: var(--big-font-size);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
   color: var(--text-color);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.home__profession.fade-out {
+  opacity: 0;
+}
+
+.home__profession.fade-in {
+  opacity: 1;
 }
 
 .home__profession::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -.5rem;
-  width: 25%;
+  bottom: -0.5rem;
+  width: 35%; /* Adjust as necessary */
   height: 3px;
   background-color: var(--text-color);
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*=============== ROLE ===============*/
+#role {
+  border-right: 2px solid var(--text-color);
+  padding-right: 2px;
+  animation: blinkCursor 0.7s steps(1) infinite;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.constant {
+  font-weight: normal; /* Style as needed */
+  color: var(--text-color); /* Match existing styles */
+}
+@keyframes blinkCursor {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-color);
+  }
+}
 .home__scroll {
   color: var(--title-color);
   display: inline-flex;
@@ -806,7 +849,7 @@ img {
   }
 
   .skills__content {
-    grid-template-columns: repeat(6, max-content);
+    grid-template-columns: repeat(8, max-content);
   }
 
   .services__container {
@@ -836,7 +879,7 @@ img {
     bottom: 4.5rem;
   }
   .contact__social {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(4, max-content);
     column-gap: 5rem;
   }
 
